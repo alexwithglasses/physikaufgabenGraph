@@ -5,8 +5,6 @@ import hoegl.physikaufgabenGraph.repository.ParameterRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
-
 
 @Service
 public class ParameterService {
@@ -22,8 +20,8 @@ public class ParameterService {
         return paraRepository.save(parameter);
     }
 
-    public List<Parameter> findAllParameters(){
-        return (List<Parameter>) paraRepository.findAll();
+    public Iterable<Parameter> findAllParameters(){
+        return paraRepository.findAll();
     }
 
     public Parameter findParameterById(String id){

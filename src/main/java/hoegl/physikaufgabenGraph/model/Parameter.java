@@ -10,7 +10,7 @@ import java.util.Random;
 
 @Document("Parameter")
 @Getter @Setter @NoArgsConstructor
-public class Parameter {
+public class Parameter{
 
     @Id
     private String bezeichnungID;
